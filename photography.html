@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Wenting Yu</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='//fonts.googleapis.com/css?family=Montserrat:thin,extra-light,light,100,200,300,400,500,600,700,800'
+        rel='stylesheet' type='text/css'>
+    <link rel="icon" type="image/x-icon"
+        href="https://i.pinimg.com/originals/55/1a/40/551a40dff0306d62d21e847621062d8b.png">
+</head>
+
+<body id="portfolio">
+    <topnav>
+        <ul>
+            <li><a class="split" href="index.html">Wenting Yu</a></li>
+            <li><a href="about.html">about</a></li>
+            <li><a class="active" href="photography.html">portfolio</a></li>
+            <li><a href="tidbits.html">tidbits</a></li>
+            <li><a href="contact.html">contact</a></li>
+        </ul>
+    </topnav>
+    <nav>
+        <ul style="display: block;">
+            <li><strong style="margin-left: 20px; text-transform: uppercase;">My Work</strong></li>
+            <li><a class="active" href="photography.html">Photography</a></li>
+            <li><a href="painting.html">Painting</a></li>
+            <li><a href="design.html">Design</a></li>
+        </ul>
+    </nav>
+    <section class="row">
+        <div class="column">
+            <div class="gallery-item" onclick="openModalb()">
+                <div class="image-wrap">
+                    <img class="gallery-image" src="images/IMG_0449.jpg">
+                    <div class="image-description">Eats Shoots and Leaves</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <div class="image-wrap" onclick="openModalh()">
+                    <img class="gallery-image" src="images/IMG_4445 3.JPG">
+                    <div class="image-description">Humans of New Rochelle</div>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="gallery-item" onclick="openModali()">
+                <div class="image-wrap">
+                    <img class="gallery-image" src="images/IMG_7423.jpg">
+                    <div class="image-description">Between Fire and Ice</div>
+                </div>
+            </div>
+            <div class="gallery-item" onclick="openModalg()">
+                <div class="image-wrap">
+                    <img class="gallery-image" src="images/DSC_6384.jpeg">
+                    <div class="image-description">Senior Photos 2020</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div id="bambooModal" class="modal">
+        <span class="close" onclick="closeModalb()">&times;</span>
+        <!-- <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a> -->
+        <div class="modal-content">
+            <div class="modalSlides, demo"><img src="images/IMG_0449.JPG" alt="bamboo peeler" style="width:100%"></div>
+            <div class="modalSlides"><img src="images/063A1A7A-1B16-4543-910B-ABD1BBA4264D_1_105_c.jpeg"
+                    alt="bamboo peeler" style="width:100%"></div>
+            <div class="modalSlides"><img src="images/92DCEBBC-E94A-4237-B194-BFCEA4B54937_1_105_c.jpeg"
+                    alt="bamboo peeler" style="width:100%"></div>
+            <div class="modalSlides"><img src="images/DF5D07D8-125F-43D9-8F73-0876C82FDE94_1_105_c.jpeg"
+                    alt="bamboo peeler" style="width:100%"></div>
+            <div class="modalSlides"><img src="images/EA4C9AC0-E83C-4CBF-B855-3D9BC3570B4F_1_105_c.jpeg"
+                    alt="bamboo peeler" style="width:100%"></div>
+            <div class="modalSlides"><img src="images/ED6BDA7C-5720-48D0-8788-E47DF45A1FE5_1_201_a.jpeg"
+                    alt="bamboo peeler" style="width:100%"></div>
+        </div>
+        <div class="caption-container">
+            <p id="caption"><strong>Eats Shoots and Leaves</strong><br><br>Every May, my mother and I renew a symbiotic
+                relationship with our neighbors, whereby we attempt to help curb their rapidly overgrowing bamboo forest
+                by picking newly sprung shoots and in return, we get to feast on the fresh shoots. Amid the hours of
+                labor that go into picking, peeling, and preserving the shoots, I’ve developed a newfound appreciation
+                for nature’s eternal precision. Bamboo shoots are testament to the Earth as the ultimate artist.
+            </p>
+        </div>
+    </div>
+    <div id="icelandModal" class="modal">
+        <span class="close" onclick="closeModali()">&times;</span>
+        <div class="modal-content">
+            <div class="modalSlides, demo"><img src="images/IMG_7423.jpg" style="width:100%"></div>
+            <div class="modalSlides"><img src="images/C295E33D-4FFD-4425-AF02-103C4BE49641_1_105_c.jpeg"
+                    style="width:100%"></div>
+            <div class="modalSlides"><img src="images/5008BC37-4F24-4728-BF36-59CBE9901887_1_105_c.jpeg"
+                    style="width:100%"></div>
+            <div class="modalSlides"><img src="images/7D68A781-AB1A-4239-987E-127281B12A74_1_201_a.jpeg"
+                    style="width:100%"></div>
+            <div class="modalSlides"><img src="images/65EB00FD-43C7-40E6-94DA-72F86738945D_1_105_c.jpeg"
+                    style="width:100%"></div>
+            <div class="modalSlides"><img src="images/239BF82D-9F2A-473F-A19D-989393D8F8DC_1_105_c.jpeg"
+                    style="width:100%"></div>
+        </div>
+        <div class="caption-container">
+            <p id="caption"><strong>Between Fire and Ice </strong><br><br> Iceland’s popular nickname is the “Land of
+                Fire and Ice”. Indeed,
+                some of Iceland’s most striking landscapes include fiery volcanos and crystal glaciers. But during my
+                visit there, I found myself instead falling in love with the subtleties of Iceland’s in-between
+                landscapes – those rolling hills and muted colors that stretch on and on, until perhaps, at one point,
+                they too dissolve into either fire or ice. </p>
+        </div>
+    </div>
+    <div id="honrModal" class="modal">
+        <span class="close" onclick="closeModalh()">&times;</span>
+        <div class="modal-content">
+            <div class="modalSlides, demo"><img src="images/IMG_4445 3.JPG" style="width:100%"></div>
+            <div class="modalSlides"><img src="images/DSC_0926 2.jpg" style="width:100%"></div>
+            <div class="modalSlides"><img src="images/IMG_4413.JPG" style="width:100%"></div>
+            <div class="modalSlides"><img src="images/IMG_4467 (1).JPG" style="width:100%"></div>
+            <div class="modalSlides"><img src="images/78FCA603-9CF4-424A-994C-27645D47A3C3_1_105_c.jpeg"
+                    style="width:100%"></div>
+            <div class="modalSlides"><img src="images/2F809F50-936D-424E-862D-B75A3DDA545D_1_105_c.jpeg"
+                    style="width:100%"></div>
+        </div>
+        <div class="caption-container">
+            <p id="caption"><strong>Humans of New Rochelle</strong><br><br>My love letter to the city in which I was
+                born and
+                raised, through the stories of the people who make the place. To learn more and view the complete
+                collection of photos and stories, please visit the website <a style="color:rgb(90, 141, 111);"
+                    href="https://humansofnewrochelle.wixsite.com/mysite" target="_blank">here &#8599</a>.
+            </p>
+        </div>
+    </div>
+    <div id="gradModal" class="modal">
+        <span class="close" onclick="closeModalg()">&times;</span>
+        <div class="modal-content">
+            <div class="modalSlides, demo"><img src="images/DSC_6384.jpeg" style="width:100%"></div>
+            <div class="modalSlides"><img src="images/34E64CB5-BBB9-4B52-9869-B2E4698A93B2_1_105_c.jpeg"
+                    style="width:100%"></div>
+            <div class="modalSlides"><img src="images/E490EA1E-4B0B-4C80-9895-303EBDBABC5B_1_105_c.jpeg"
+                    style="width:100%"></div>
+            <div class="modalSlides"><img src="images/31A0F771-60AF-4649-A17D-C2BA82D9002D_1_105_c.jpeg"
+                    style="width:100%"></div>
+            <div class="modalSlides"><img src="images/AE4B265D-8226-40A9-BE33-0B338EE3FE83_1_105_c.jpeg"
+                    style="width:100%"></div>
+        </div>
+        <div class="caption-container">
+            <p id="caption"><strong>Senior Photos 2020</strong><br><br>To my high school’s class of 2020 I offered my
+                amateur photography skills and took free senior photographs for whoever wanted. Some came alone, some
+                came with friends, and some came with family, but all left with smiles, including myself.
+                To see the full collection of photos, click <a style="color:rgb(90, 141, 111);"
+                    href="https://humansofnewrochelle.wixsite.com/mysite/graduation-2020" target="_blank">here &#8599</a>.</p>
+        </div>
+    </div>
+    <div>
+        <script src="main.js"></script>
+    </div>
+</body>
+
+</html>
