@@ -35,34 +35,100 @@
     </nav>
     <section class="row">
         <div class="column">
-            <div class="gallery-item">
+            <div class="gallery-item" onclick="openModalp()">
                 <div class="image-wrap">
                     <img class="gallery-image" src="images/home_collage_final.jpg">
                     <div class="image-description">Photoshop: Home Collage</div>
                 </div>
             </div>
-            <div class="gallery-item">
+            <div class="gallery-item" onclick="openModalil()">
                 <div class="image-wrap">
                     <img class="gallery-image" src="images/smartmockups_l8hujhg5.jpg">
-                    <div class="image-description">Illustrator: Peppermint Bark Logo Design</div>
+                    <div class="image-description">Illustrator: Logo Design</div>
                 </div>
             </div>
         </div>
         <div class="column">
-            <div class="gallery-item">
+            <div class="gallery-item" onclick="openModalin()">
                 <div class="image-wrap">
                     <img class="gallery-image" src="images/Murakami story design2.png">
-                    <div class="image-description">InDesign: The Kingdom That Failed</div>
-                </div>
-            </div>
-            <div class="gallery-item">
-                <div class="image-wrap">
-                    <img class="gallery-image" src="images/Screen Shot 2022-10-18 at 3.20.22 PM.png">
-                    <div class="image-description">Just For Fun</div>
+                    <div class="image-description">InDesign: Short Story Layout</div>
                 </div>
             </div>
         </div>
     </section>
+    <div id="photoshopModal" class="modal">
+        <span class="close" onclick="closeModalp()">&times;</span>
+        <div class="modal-content">
+            <div class="modalSlides, demo"><img src="images/home_collage_final.jpg" alt="home collage"
+                    style="width:100%"></div>
+        </div>
+        <div class="caption-container">
+            <p style="font-size: medium;" id="caption"><strong>Photoshop Project: Home Collage</strong><br><br> For this
+                project, the class was
+                tasked with creating a collage in Photoshop representing the place we called home. Torn between wanting
+                to represent my hometown of New Rochelle, NY or my grandparents’ home in rural China, I instead chose to
+                celebrate both.
+                The content of this collage was pulled from a variety of sources, including web images, personal
+                photographs, and different textures. All the people displayed were people I had previously photographed
+                in New York, and I isolated and placed them in a rice field image sourced from online to create both a
+                sense of displacement and homegoing. At the center of the collage sits my grandparents’ house in China,
+                with my house in New Rochelle as its shadow. Around the house is a portal-like shape encompassing both a
+                textured sun and a glimpse of the construction-filled cityscape of New York.
+                The collage as a whole questions the definition of home and belonging, celebrating the possibility of
+                feeling belonging with two starkly different cities.
+
+            </p>
+        </div>
+    </div>
+    <div id="illustratorModal" class="modal">
+        <span class="close" onclick="closeModalil()">&times;</span>
+        <div class="modal-content">
+            <div class="modalSlides, demo"><img src="images/smartmockups_l8hujhg5.jpg" alt="peppermint mockup"
+                    style="width:100%"></div>
+            <div class="modalSlides"><img src="images/peppermintbark_projectsheet.jpeg" style="width:100%"></div>
+        </div>
+        <div class="caption-container">
+            <p style="font-size: medium;" id="caption"><strong>Illustrator Project: Logo Design</strong><br><br> This
+                project tasked the class with
+                designing (or redesigning) a logo and package pattern in Illustrator for a product of our choice.
+                Inspired by a sudden bout of holiday cheer in mid-October, I chose to create a logo for my favorite
+                festive snack–Peppermint Bark.
+
+                After sketching 30 different thumbnails and reiterating my top three designs, I eventually settled on a
+                design that was simple enough to serve as a functional logo, while also detailed enough to read as
+                peppermint bark. This was achieved through a literal pun on “bark” with the simple dog profile and a
+                festive color palette.
+
+            </p>
+        </div>
+    </div>
+    <div id="indesignModal" class="modal">
+        <span class="close" onclick="closeModalin()">&times;</span>
+        <div class="modal-content">
+            <div class="modalSlides, demo"><img src="images/Murakami story design2.png" alt="murakami"
+                    style="width:100%"></div>
+            <div class="modalSlides"><img src="images/Murakami story design3.png" style="width:100%"></div>
+            <div class="modalSlides"><img src="images/Murakami story design4.png" style="width:100%"></div>
+        </div>
+        <div class="caption-container">
+            <p style="font-size: medium;" id="caption"><strong>InDesign Project: Short Story Layout</strong><br><br>
+                This project tasked the class
+                with designing a layout for the Murakami short story, The Kingdom That Failed, in InDesign. We worked in
+                three 16x10 spreads, creating six 8x10 pages in which we were required to include the full body of text,
+                a minimum of two source images, and visible page numbers.
+
+                My resulting layout plays with text as image to illustrate the content of the story; for instance,
+                shaping the river described in the opening paragraph of the story or playing with the letter "Q"
+                throughout the spreads. Color and image is further employed to emphasize an modern, editorial-style design.
+                
+            </p>
+        </div>
+    </div>
+
+    <div>
+        <script src="main.js"></script>
+    </div>
 </body>
 
 </html>

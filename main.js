@@ -31,3 +31,21 @@ function openModalg() {
 function closeModalg() {
     document.getElementById("gradModal").style.display = "none";
 }
+function openModalp() {
+    document.getElementById("photoshopModal").style.display = "block";
+}
+function closeModalp() {
+    document.getElementById("photoshopModal").style.display = "none";
+}
+function openModalil() {
+    document.getElementById("illustratorModal").style.display = "block";
+}
+function closeModalil() {
+    document.getElementById("illustratorModal").style.display = "none";
+}
+function openModalin() {
+    document.getElementById("indesignModal").style.display = "block";
+}
+function closeModalin() {
+    document.getElementById("indesignModal").style.display = "none";
+}
