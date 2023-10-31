@@ -10,6 +10,34 @@
         rel='stylesheet' type='text/css'>
     <link rel="icon" type="image/x-icon"
         href="https://i.pinimg.com/originals/55/1a/40/551a40dff0306d62d21e847621062d8b.png">
+    <style>
+        /* Center the container both horizontally and vertically */
+        .center-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+
+        /* Style the container */
+        .image-container {
+            width: 90%;
+            height: 650px;
+            /* Set the height to control scrolling */
+            overflow-y: scroll;
+            /* Enable vertical scrolling */
+            border: 1px solid #ccc;
+            /* Add a border for visual separation */
+        }
+
+        /* Style the individual images */
+        .image-container img {
+            display: block;
+            margin: 3px auto;
+            max-width: 100%;
+            /* Ensure images fit within the container */
+        }
+    </style>
 </head>
 
 <body id="tidbits">
@@ -25,11 +53,24 @@
             <li><a href="contact.html">contact</a></li>
         </ul>
     </topnav>
-    <object data="Wenting Yu - Design Portfolio.pdf" type="application/pdf" width="100%" height="600">
-        <p>It appears you don't have a PDF plugin for this browser.
-           You can <a href="pdfs/Wenting Yu - Design Portfolio.pdf">click here to download the PDF file.</a>
-        </p>
-    </object>
+    <div class="center-container">
+        <div class="image-container">
+            <img src="pdfs/Design Portfolio Images.001.jpeg" alt="Image 1">
+            <img src="pdfs/Design Portfolio Images.002.jpeg" alt="Image 2">
+            <img src="pdfs/Design Portfolio Images.003.jpeg" alt="Image 3">
+            <img src="pdfs/Design Portfolio Images.004.jpeg" alt="Image 4">
+            <img src="pdfs/Design Portfolio Images.005.jpeg" alt="Image 5">
+            <img src="pdfs/Design Portfolio Images.006.jpeg" alt="Image 6">
+            <img src="pdfs/Design Portfolio Images.007.jpeg" alt="Image 7">
+            <img src="pdfs/Design Portfolio Images.008.jpeg" alt="Image 8">
+            <img src="pdfs/Design Portfolio Images.009.jpeg" alt="Image 9">
+            <img src="pdfs/Design Portfolio Images.010.jpeg" alt="Image 10">
+            <img src="pdfs/Design Portfolio Images.011.jpeg" alt="Image 11">
+            <img src="pdfs/Design Portfolio Images.012.jpeg" alt="Image 12">
+            <img src="pdfs/Design Portfolio Images.013.jpeg" alt="Image 13">
+            <img src="pdfs/Design Portfolio Images.014.jpeg" alt="Image 14">
+        </div>
+    </div>
     <!--<div class="tidbit">
         <p><strong style="font-size: 30px">tidbit</strong>&nbsp;&nbsp;&nbsp;noun</p>
         <p>1. a choice morsel of food</p>
@@ -42,4 +83,5 @@
         </div>
     </div>-->
 </body>
+
 </html>
